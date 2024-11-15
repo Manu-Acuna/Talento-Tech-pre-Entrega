@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+header img{
+    width: 180px;
+    margin: 10px auto 0 auto;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-container{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.list-container .list-item{
+    margin: 20px;
+    padding: 0;
+}
+
+.list-container .item-animation{
+    border-bottom: 3px solid white;
+    padding: 10px 0;
+}
+
+.list-container .item-animation:hover{
+    border-bottom: 3px solid rgb(237,169,39);
+}
+
+.list-container  a{
+    text-decoration: none;
+    color: rgb(33,33,33);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-container a:hover, ul li a i:hover, .cerrar-menu i:hover{
+    color: rgb(237,169,39);
+}
+
+.abrir-menu, .cerrar-menu{
+    display: none;
+}
+
+/* main */
+main{
+    margin-top: 10px;
+    background-color: white;
+}
+
+/* nueva seccion */
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(https://www.vitamina.com.ar/media/wysiwyg/2-Home-Denim_2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+.presentacion .marca{
+    width: 600px;
+    margin: auto;
+    color: white;
+}
+.presentacion .marca a{
+    text-decoration: none;
+    color: white;
+}
+
+.presentacion .marca a h1{
+    text-align: center;
+    font-size: 45px;
+}
+
+.presentacion .marca a p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(237,169,39);
+    -webkit-text-stroke: 1px #1a1515;
+    margin: auto;
+}
+
+/* formulario*/
+
+.club{
+    width: 100%;
+    display: flex;
+    margin: 60px auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.228);
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    background: linear-gradient(to left, #edc9ba, #a88c80);
+}
+
+#formulario input{
+	background-color: #eee;
+    border: none;
+    border-radius: 8px;
+	padding: 24px 10px;
+	margin: 8px 0;
+	width: 100%;
+    font-size: 20px;
+}
+
+#agregar-socio{
+    width: 60%;
+    margin-top: 30px;
+    overflow-y: hidden;
+}
+
+#invitacion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #FFF;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-position: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+#boton-club{
+    border-radius: 10px;
+    border-color: #fefeaf;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px 80px;
+    letter-spacing: 2px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+#boton-club span{
+    margin: auto;
+}
+
+#boton-club:hover{
+    border-radius: 10px;
+    border-color: #0a0909;
+    background-color: transparent;
+    color: #060505;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px 80px;
+    letter-spacing: 2px;
+    margin: 30px auto;
+}
+
+.tarjeta-socio{
+    display: flex;
+    justify-content: center;
+    align-items:  flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    background: linear-gradient(to left, #edc9ba, #a88c80);   
+    
+}
+
+#nueva-tarjeta{
+    border-radius: 20px;
+    border-color: #FFFFFF;
+    border: 3px solid;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px 60px;
+    letter-spacing: 2px;
+    margin: 50px 80px 50px 50px;
+}
+
+#nueva-tarjeta p{
+    font-size: 30px;
+    margin: 20px; 
+}
+
+#nueva-tarjeta h2{
+    font-size: 50px;
+    margin: 20px; 
+}
+
+#nueva-tarjeta i{
+    font-size: 40px;    
+    margin-left: 80%; 
+}
+
+/* nueva seccion */
+
+.otoño-invierno{
+    width: 100%;
+    display: flex;
+    margin: 60px 0;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+.otoño-invierno .descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+}
+
+.otoño-invierno .descripcion .coleccion{
+    width: 28vw;
+}
+
+.otoño-invierno a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.otoño-invierno .animacion{
+    font-size: 25px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.otoño-invierno .animacion:hover{
+    font-size: 30px;
+    transition: .3s ease;
+}
+
+.otoño-invierno a .descripcion{
+    background: rgb(236,164,64);
+    background: radial-gradient(circle, rgba(236,164,64,1) 7%, rgba(213,122,16,1) 27%);
+}
+
+.otoño-invierno a .imagen-venta{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(https://1.bp.blogspot.com/-LBjXVqk0vfw/XHt6FDml8HI/AAAAAAABnvY/lVPHHEg7UiAs3oyy-aAZsjCZRuD2NEYVwCEwYBhgL/w1200-h630-p-k-no-nu/moda%2Boto%25C3%25B1o%2Binvierno%2B2019%2Bargentina.jpg);
+
+}
+
+.otoño-invierno a .imagen-venta,.otoño-invierno a .descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49.5vw;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.otoño-invierno a .imagen-venta .coleccion h2{
+    color: white;
+    margin: auto;
+} 
+
+/* nueva seccion */
+
+.productos .destacados{
+    margin: 40px auto;
+}
+
+.productos .destacados h4{
+    text-align: center;
+    font-size: 30px;
+}
+
+.productos .catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+
+.productos .catalogo .elemento{
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 3px rgba(0,0,0,0.1);
+}
+
+.productos .catalogo .elemento img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.productos .catalogo .elemento h5{
+    font-size: 20px;
+}
+
+.productos .catalogo .elemento .precio{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.productos .catalogo .elemento .precio a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding:16px 34px;
+    border-radius: 5px;
+    background-color:rgb(237,169,39);
+}
+
+.productos .catalogo .elemento .precio a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 34px;
+    border-radius: 5px;
+    background-color: rgba(237,169,39,0.7);
+    box-shadow: 0 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+/* nueva seccion */
+.estilo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.estilo h4{
+    font-size: 35px;
+}
+
+.estilo p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.estilo a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #1c1c1c;
+    font-size: 32px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+}
+
+/* Nueva seccion */
+
+/* footer */
+
+footer{
+    margin-top: 40px;
+    box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.1);
+}
+
+footer .container{
+    width: 90vw;
+    margin: auto;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container ul li{
+    margin: 20px 10px;
+}
+
+footer .container ul li i{
+    font-size: 30px;
+    color: black;
+}
+
+footer .container ul li i:hover{
+    color: rgb(237,169,39);
+}
+
+
+.container p{
+    text-align:center;
+}
+
+/* configuracion responsive a 750px */
+
+@media screen and (max-width: 750px){
+    *{
+        scroll-behavior: auto;
+    }
+
+    header{
+        justify-content: space-around;
+    }
+
+    header img{
+        margin: 10px 0;
+    }
+
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    .cerrar-menu{
+        margin-left: 150px;
+    }
+    .abrir-menu{
+        margin:auto 0 auto 110px;
+        padding-bottom: 10px;
+        color: rgb(33,33,33);
+    }
+
+    .nav-container{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: end;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 100vmax rgba(0,0,0,0.5);
+    }
+
+    .nav-container.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .list-container{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .list-item{
+        padding-top: 100px;
+    }
+    .list-item a, .cerrar-menu{
+        color: white;
+    }
+
+    .list-container .item-animation, .list-container .item-animation:hover{
+        border-bottom: 0;
+        padding: 0;
+    }
+
+    /* main */
+    /* Nueva seccion */
+    .presentacion{
+        width: 100%;
+        margin: -10px 0 0 0;
+        height: 350px;
+        background-size: cover;
+    }
+
+    .presentacion .marca h1{
+        font-size: 25px;
+        margin: auto;
+    }
+
+    .presentacion .marca p{
+        font-size: 15px;
+    }
+
+    /* Nueva seccion*/
+
+    .club{
+        flex-direction: column-reverse;
+    }
+
+    #formulario, #invitacion{
+        width: 100%;
+        height: 350px;
+    }
+
+    #invitacion{
+        background-size: cover;
+
+    }
+
+    .boton{
+        margin: auto;
+    }
+    #boton-club{
+        padding: 10px 40px;
+    }
+
+    #boton-club:hover{
+        padding: 10px 40px;
+    }
+
+    #formulario input{
+        background-color: #eee;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 3px 0;
+        width: 100%;
+        font-size: 15px;
+    }
+    #agregar-socio{
+        width: 80%;
+    }
+    .tarjeta-socio{
+        width: 100%;
+        height: 350px;
+    }
+    #nueva-tarjeta{
+        text-align: start;
+        font-weight: bold;
+        padding: 20px 0;
+        letter-spacing: 2px;
+        margin: 0 10px;
+    }
+    
+    #nueva-tarjeta p{
+        text-align: center;
+        font-size: 25px; 
+    }
+    
+    #nueva-tarjeta h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    #nueva-tarjeta i{
+        font-size: 40px;    
+        margin-left: 80%; 
+    }
+
+
+    /* Nueva seccion */
+    
+    .otoño-invierno{
+        display: block;
+    }
+
+    .otoño-invierno a .descripcion, .otoño-invierno a .imagen-venta{
+        width: 100vw;
+        height: 350px;
+    }
+
+    .otoño-invierno a{
+        margin: 10px 0 0 0;
+    } 
+
+    .otoño-invierno a .descripcion .coleccion{
+        text-align: center;
+        width: 80vw;
+    }
+
+    .otoño-invierno a .imagen-venta{
+        background-size: cover;
+        margin: 10px 0 0 0;
+    }
+
+    .otoño-invierno .descripcion .coleccion h2, .imagen-venta .coleccion h2{
+        font-size: 30px;
+    }
+
+    .otoño-invierno .descripcion .coleccion p{
+        font-size: 20px;
+    }
+
+    /* Nueva seccion */
+    
+    .productos .catalogo .elemento{
+        width: 70vw;
+    }
+
+}
